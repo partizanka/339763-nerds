@@ -55,42 +55,42 @@
                 </div>
               </div>
             </div>
-            <div class="filter-network">
+            <div class="filter-menu">
               <h2 class="filter-title">Сетка:</h2>
-              <div class="network-input">
-                <input class="network-mark" type="radio" name="network" id="adaptive">
-                <label class="network-title" for="adaptive">Адаптивная</label>
+              <div class="filter-menu-item">
+                <input class="menu-mark" type="radio" name="network" id="adaptive" checked>
+                <label class="filter-menu-title" for="adaptive">Адаптивная</label>
               </div>
-              <div class="network-input">
-                <input class="network-mark" type="radio" name="network" id="fixed">
-                <label class="network-title" for="fixed">Фиксированная</label>
+              <div class="filter-menu-item">
+                <input class="menu-mark" type="radio" name="network" id="fixed">
+                <label class="filter-menu-title" for="fixed">Фиксированная</label>
               </div>
-              <div class="network-input">
-                <input class="network-mark" type="radio" name="network" id="rubber">
-                <label class="network-title" for="rubber">Ризиновая</label>
+              <div class="filter-menu-item">
+                <input class="menu-mark" type="radio" name="network" id="rubber">
+                <label class="filter-menu-title" for="rubber">Ризиновая</label>
               </div>
             </div>
-            <div class="filter-features">
+            <div class="filter-menu">
               <h2 class="filter-title">Особенности:</h2>
-              <div class="features-input">
-                <input class="features-mark" type="checkbox" name="features-slider" id="slider">
-                <label class="features-title" for="slider">Слайдер</label>
+              <div class="filter-menu-item">
+                <input class="menu-mark" type="checkbox" name="features-slider" id="slider" checked>
+                <label class="filter-menu-title" for="slider">Слайдер</label>
               </div>
-              <div class="features-input">
-                <input class="features-mark" type="checkbox" name="features-block-plus" id="block-plus">
-                <label class="features-title" for="block-plus">Блок преимуществ</label>
+              <div class="filter-menu-item">
+                <input class="menu-mark" type="checkbox" name="features-block-plus" id="block-plus">
+                <label class="filter-menu-title" for="block-plus">Блок преимуществ</label>
               </div>
-              <div class="features-input">
-                <input class="features-mark" type="checkbox" name="features-news" id="news">
-                <label class="features-title" for="news">Новости</label>
+              <div class="filter-menu-item">
+                <input class="menu-mark" type="checkbox" name="features-news" id="news" checked>
+                <label class="filter-menu-title" for="news">Новости</label>
               </div>
-              <div class="features-input">
-                <input class="features-mark" type="checkbox" name="features-galery" id="galery">
-                <label class="features-title" for="galery">Галерея</label>
+              <div class="filter-menu-item">
+                <input class="menu-mark" type="checkbox" name="features-galery" id="galery">
+                <label class="filter-menu-title" for="galery">Галерея</label>
               </div>
-              <div class="features-input">
-                <input class="features-mark" type="checkbox" name="features-basket" id="basket">
-                <label class="features-title" for="basket">Корзина</label>
+              <div class="filter-menu-item">
+                <input class="menu-mark" type="checkbox" name="features-basket" id="basket">
+                <label class="filter-menu-title" for="basket">Корзина</label>
               </div>
               <input class="filter-btn" type="submit" value="Показать">
             </div>
@@ -208,7 +208,7 @@
       <div class="map">
         <section class="contacts">
           <h2 class="contacts-title">Nёrds design studio</h2>
-          <p class="contacts-text">191196, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
+          <p class="contacts-text">191196, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p class="contacts-text">тел. +7 (812) 275-75-75</p>
           <a class="contacts-link" href="#">Напишите нам</a>
         </section>
@@ -228,21 +228,23 @@
       </div>
     </footer>
   </body>
-  <form class="letter">
-    <h2 class="letter-title">Напишите нам</h2>
-    <button class="letter-close" type="button"></button>
-    <div class="letter-contact">
-      <label class="your-contact-title" for="name">Ваше имя:</label>
-      <input class="your-contact-text" type="text" name="your-name" placeholder="Представьтесь, пожалуйста" id="name">
-    </div>
-    <div class="letter-contact">
-      <label class="your-contact-title" for="email">Ваш e-mail:</label>
-      <input class="your-contact-text" type="email" name="your-mail" placeholder="Для отправки ответа" id="email">
-    </div>
-    <div class="letter-contact">
-      <label class="your-contact-title" for="message">Текст письма:</label>
-      <textarea class="your-contact-text" name="your-message" placeholder="В свободной форме" id="massege"></textarea>
-    </div>
-    <input class="letter-btn" type="submit" name="your-letter" value="Отправить">
-  </form>
+  <div>
+    <form class="letter">
+      <h2 class="letter-title">Напишите нам</h2>
+      <button class="letter-close" type="button"></button>
+      <div class="letter-contact">
+        <label class="your-contact-title" for="name">Ваше имя:</label>
+        <input class="your-contact-text" type="text" name="your-name" placeholder="Представьтесь, пожалуйста" id="name">
+      </div>
+      <div class="letter-contact">
+        <label class="your-contact-title" for="email">Ваш e-mail:</label>
+        <input class="your-contact-text" type="email" name="your-mail" placeholder="Для отправки ответа" id="email">
+      </div>
+      <div class="letter-contact">
+        <label class="your-contact-title" for="message">Текст письма:</label>
+        <textarea class="your-contact-text" name="your-message" placeholder="В свободной форме" id="massege"></textarea>
+      </div>
+      <input class="letter-btn" type="submit" name="your-letter" value="Отправить">
+    </form>
+  </div>
 </html>

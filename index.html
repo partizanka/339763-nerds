@@ -48,7 +48,7 @@
           <div class="slider-btn">
             <div>
               <label for="slider-first"></label>
-              <input type="radio" name="slider-btn" ib="slider-first">
+              <input type="radio" name="slider-btn" id="slider-first">
             </div>
             <div>
               <label for="slider-second"></label>
@@ -122,7 +122,7 @@
       <div class="map">
         <section class="contacts">
           <h2 class="contacts-title">Nёrds design studio</h2>
-          <p class="contacts-text">191196, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
+          <p class="contacts-text">191196, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p class="contacts-text">тел. +7 (812) 275-75-75</p>
           <a class="contacts-link" href="#">Напишите нам</a>
         </section>
@@ -142,21 +142,23 @@
       </div>
     </footer>
   </body>
-  <form class="letter">
-    <h2 class="letter-title">Напишите нам</h2>
-    <button class="letter-close" type="button"></button>
-    <div class="letter-contact">
-      <label class="your-contact-title" for="name">Ваше имя:</label>
-      <input class="your-contact-text" type="text" name="your-name" placeholder="Представьтесь, пожалуйста" id="name">
-    </div>
-    <div class="letter-contact">
-      <label class="your-contact-title" for="email">Ваш e-mail:</label>
-      <input class="your-contact-text" type="email" name="your-mail" placeholder="Для отправки ответа" id="email">
-    </div>
-    <div class="letter-contact">
-      <label class="your-contact-title" for="message">Текст письма:</label>
-      <textarea class="your-contact-text" name="your-message" placeholder="В свободной форме" id="massege"></textarea>
-    </div>
-    <input class="letter-btn" type="submit" name="your-letter" value="Отправить">
-  </form>
+  <div>
+    <form class="letter">
+      <h2 class="letter-title">Напишите нам</h2>
+      <button class="letter-close" type="button"></button>
+      <div class="letter-contact">
+        <label class="your-contact-title" for="name">Ваше имя:</label>
+        <input class="your-contact-text" type="text" name="your-name" placeholder="Представьтесь, пожалуйста" id="name">
+      </div>
+      <div class="letter-contact">
+        <label class="your-contact-title" for="email">Ваш e-mail:</label>
+        <input class="your-contact-text" type="email" name="your-mail" placeholder="Для отправки ответа" id="email">
+      </div>
+      <div class="letter-contact">
+        <label class="your-contact-title" for="message">Текст письма:</label>
+        <textarea class="your-contact-text" name="your-message" placeholder="В свободной форме" id="massege"></textarea>
+      </div>
+      <input class="letter-btn" type="submit" name="your-letter" value="Отправить">
+    </form>
+  </div>
 </html>
