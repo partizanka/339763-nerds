@@ -3,7 +3,7 @@ body {
   line-height: 24px;
   color: #283136;
   font-weight: normal;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 h1 {
@@ -18,4 +18,321 @@ h2 {
   line-height: 30px;
   color: #000000;
   font-weight: normal;
+}
+
+.container {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.logo {
+  
+}
+
+.menu-block {
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
+}
+
+.slider {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.slider-content {
+  width: 380px;
+}
+
+.slider-title {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.slider-text {
+  margin-bottom: 40px;
+}
+
+.index-catalog {
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.index-catalog-item {
+  width: 300px;
+  margin-right: 100px;
+}
+
+.index-catalog-image {
+  margin-bottom: 30px;
+}
+
+.index-catalog-title {
+  margin: 0;
+}
+
+.index-catalog-text {
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.index-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.index-content-left {
+  width: 660px;
+}
+
+.index-content-text {
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.content-list-left {
+  margin: 0; 
+}
+
+.content-list-item {
+  margin-top: 35px;
+}
+
+.index-content-right {
+  width: 360px;
+}
+
+.index-content-image {
+  margin-bottom: 40px;
+}
+
+.index-content-list {
+  text-align: center;
+}
+
+.list-right {
+  display: flex;
+  margin-top: 50px;
+}
+
+.content-list-right {
+  width: 100px;
+  margin-right: 25px;
+}
+
+.index-content-numbers {
+  margin: 0;
+}
+
+.index-content-text {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.logo-company {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.map {
+  height: 360px;
+  padding-top: 55px;
+  
+}
+
+.contacts {
+  box-sizing: border-box;
+  width: 320px;
+  background: #ffffff;
+  padding: 50px;
+  margin-left: 140px;
+}
+
+.contacts-title {
+  margin: 0;
+}
+
+.contacts-text {
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+.contacts-link {
+  margin-top: 40px;
+}
+
+.container-flex {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.footer-social-btn {
+  margin-right: 140px;
+}
+
+.social-btn {
+  margin-right: 10px;
+}
+
+.footer-social-text p {
+  margin-bottom: 0;
+}
+
+.catalog-title {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 115px;
+}
+
+.catalog-block {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+.catalog-block-left {
+  width: 260px;
+}
+
+.filter-title {
+  margin: 0;
+}
+
+.filter-cost {
+  margin-bottom: 60px;
+}
+
+.filter-cost h2 {
+  margin-bottom: 55px;
+}
+
+.filter-control {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.input-mark {
+  width: 80px;
+  height: 40px;
+}
+
+.filter-menu {
+  margin-top: 60px;
+}
+
+.filter-menu h2 {
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  margin-top: 50px;
+}
+
+.catalog-block-right {
+  width: 760px;
+}
+
+.catalog-sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+.catalog-sort .filter-title {
+  margin-right: 265px;
+}
+
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.catalog-item {
+  margin-bottom: 40px;
+}
+
+.catalog-info {
+  box-sizing: border-box;
+  width: 360px;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.catalog-item-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.catalog-text {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.number-page {
+  display: flex;
+}
+
+.page-item {
+  margin-right: 30px;
+}
+
+.letter form {
+  box-sizing: border-box;
+  width: 960px;
+  padding-top: 75px;
+  padding-bottom: 85px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.letter-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.letter-contact {
+  width: 360px;
+  margin-bottom: 35px;
+}
+
+.your-contact-title {
+  margin-bottom: 10px;
+}
+
+.your-contact-text {
+  width: 360px;
+  height: 15px;
+  padding: 15px;
+}
+
+.letter-contact textarea {
+  width: 730px;
+  min-height: 85px;
+}
+
+.letter-btn {
+  margin-top: 0;
 }
