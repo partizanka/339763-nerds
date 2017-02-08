@@ -6,19 +6,13 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
 }
 
-h1 {
-  font-size: 55px;
-  line-height: 55px;
-  color: #000000;
-  font-weight: normal;
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-h2 {
-  font-size: 24px;
-  line-height: 30px;
-  color: #000000;
-  font-weight: normal;
-}
+
 
 .container {
   width: 1160px;
@@ -33,14 +27,12 @@ h2 {
   padding-top: 60px;
 }
 
-.logo {
-  
-}
-
 .menu-block {
   display: flex;
   justify-content: space-between;
   width: 440px;
+  list-style: none;
+  padding: 0;
 }
 
 .slider {
@@ -147,9 +139,37 @@ h2 {
   margin-bottom: 80px;
 }
 
+.link-company {
+  display: block;
+  width: 280px;
+  height: 180px;
+  background-color: #e1e1e1;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo-company .htmlacademy {
+  background-image: url(../img/logo-1.png);
+}
+
+.logo-company .bordershop {
+  background-image: url(../img/logo-2.png);
+}
+
+.logo-company .pink {
+  background-image: url(../img/logo-3.png);
+}
+
+.logo-company .mishka {
+  background-image: url(../img/logo-4.png);
+}
+
 .map {
   height: 360px;
   padding-top: 55px;
+  background-image: url(../img/map-marker.png);
+  background-repeat: no-repeat;
+  background-position: center;
   
 }
 
@@ -227,6 +247,12 @@ h2 {
   margin-top: 15px;
 }
 
+.filter-color {
+  width: 260px;
+  height: 80px;
+  background-color: #eeeeee;
+}
+
 .input-mark {
   width: 80px;
   height: 40px;
@@ -252,17 +278,50 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 760px;
   margin-bottom: 55px;
 }
 
-.catalog-sort .filter-title {
-  margin-right: 265px;
+.sort-link {
+  display: inline-block;
+}
+
+.btn-sort {
+  position: relative;
+  width: 60px;
+  height: 20px;
+}
+
+.btn-sort-item {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
 }
 
 .catalog-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.catalog-btn {
+  position: relative;
+  display: flex;
+  width: 360px;
+  height: 40px;
+  background-color: #e9e9e9;
+}
+
+.catalog-item-btn {
+  position: relative;
+  top: 13px;
+  left: 16px;
+  width: 14px;
+  height: 14px;
+  background: #ffffff;
+  border-radius: 50%;
+  margin-right: 9px;
 }
 
 .catalog-item {
@@ -291,6 +350,9 @@ h2 {
 
 .number-page {
   display: flex;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 60px;
 }
 
 .page-item {
@@ -308,28 +370,41 @@ h2 {
   margin-right: auto;
 }
 
+.letter-contact {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
 .letter-title {
   margin-top: 0;
   margin-bottom: 50px;
 }
 
-.letter-contact {
+.letter-close {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-item {
+  display: block;
   width: 360px;
   margin-bottom: 35px;
 }
 
-.your-contact-title {
+.your-contact-title { 
   margin-bottom: 10px;
 }
 
 .your-contact-text {
-  width: 360px;
+  width: 330px;
   height: 15px;
   padding: 15px;
 }
 
 .letter-contact textarea {
-  width: 730px;
+  width: 726px;
   min-height: 85px;
 }
 

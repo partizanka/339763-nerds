@@ -39,7 +39,7 @@
           <form class="filter" action="#">
             <div class="filter-cost">
               <h2 class="filter-title">Стоимость:</h2>
-              <div class="filter-control">
+              <div class="filter-control filter-color">
                 <div class="toggle"></div>
                 <div class="toggle"></div>
                 <div class="bar"></div>
@@ -105,9 +105,9 @@
               <a class="sort-link" href="#">По типу</a>
               <a class="sort-link" href="#">По названию</a>
             </div>
-            <div>
-              <a class="sort-link" class="btn-sort" href="#"></a>
-              <a class="sort-link" class="btn-sort" href="#"></a>
+            <div class="btn-sort">
+              <a class="sort-link btn-sort-item" href="#"></a>
+              <a class="sort-link btn-sort-item" href="#"></a>
             </div>
           </section>
           <section class="catalog-list">
@@ -231,19 +231,23 @@
   </body>
   <div class="letter">
     <form>
-      <h2 class="letter-title">Напишите нам</h2>
-      <button class="letter-close" type="button"></button>
       <div class="letter-contact">
-        <label class="your-contact-title" for="name">Ваше имя:</label>
-        <input class="your-contact-text" type="text" name="your-name" placeholder="Представьтесь, пожалуйста" id="name">
+        <h2 class="letter-title">Напишите нам</h2>
+        <button class="letter-close" type="button"></button>
       </div>
       <div class="letter-contact">
-        <label class="your-contact-title" for="email">Ваш e-mail:</label>
-        <input class="your-contact-text" type="email" name="your-mail" placeholder="Для отправки ответа" id="email">
-      </div>
-      <div class="letter-contact">
-        <label class="your-contact-title" for="message">Текст письма:</label>
-        <textarea class="your-contact-text" name="your-message" placeholder="В свободной форме" id="massege"></textarea>
+        <div class="contact-item">
+          <label class="your-contact-title" for="name">Ваше имя:</label>
+          <input class="your-contact-text" type="text" name="your-name" placeholder="Представьтесь, пожалуйста" id="name">
+        </div>
+        <div class="contact-item">
+          <label class="your-contact-title" for="email">Ваш e-mail:</label>
+          <input class="your-contact-text" type="email" name="your-mail" placeholder="Для отправки ответа" id="email">
+        </div>
+        <div class="contact-item">
+          <label class="your-contact-title" for="message">Текст письма:</label>
+          <textarea class="your-contact-text" name="your-message" placeholder="В свободной форме" id="massege"></textarea>
+        </div>
       </div>
       <input class="letter-btn" type="submit" name="your-letter" value="Отправить">
     </form>
