@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>  
   <body>
@@ -26,38 +28,36 @@
               <a class="menu-link" href="#">Контакты</a>
             </li>
           </ul>   
-          <div class="menu-item">
+          <div class="menu-item basket">
             <a class="menu-link" href="#">Корзина</a>
           </div>
         </nav>
         <section class="slider">
-          <div class="slider-content">
-            <h2 class="slider-title">Долго, дорого, скурпулёзно.</h2>
-            <p class="slider-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="slider-link" href="#">Узнать больше</a>
-          </div>
-          <div class="slider-content">
-            <h2 class="slider-title">Любим математику как никто другой</h2>
-            <p class="slider-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a class="slider-link" href="#">Узнать больше</a>
-          </div>
-          <div class="slider-content">
-            <h2 class="slider-title">Только ночь, только хардкор</h2>
-            <p class="slider-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a class="slider-link" href="#">Узнать больше</a>
+          <div class="slides">
+            <div class="slide-content">
+              <h2 class="slide-title">Долго, дорого, скурпулёзно.</h2>
+              <p class="slide-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <a class="slide-link" href="#">Узнать больше</a>
+            </div>
+            <div class="slide-content">
+              <h2 class="slide-title">Любим математику как никто другой</h2>
+              <p class="slide-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a class="slide-link" href="#">Узнать больше</a>
+            </div>
+            <div class="slide-content">
+              <h2 class="slide-title">Только ночь, только хардкор</h2>
+              <p class="slide-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <a class="slide-link" href="#">Узнать больше</a>
+            </div>
           </div>
           <div class="slider-btn">
+            <input type="radio" name="slider-btn" id="slider-first" checked>
+            <input type="radio" name="slider-btn" id="slider-second">
+            <input type="radio" name="slider-btn" id="slider-third">
             <div>
               <label for="slider-first"></label>
-              <input type="radio" name="slider-btn" id="slider-first">
-            </div>
-            <div>
               <label for="slider-second"></label>
-              <input type="radio" name="slider-btn" id="slider-second">
-            </div>
-            <div>
               <label for="slider-third"></label>
-              <input type="radio" name="slider-btn" id="slider-third">
             </div>
           </div>         
         </section>
@@ -70,19 +70,19 @@
             <img class="index-catalog-image" src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
             <h2 class="index-catalog-title">Веб-сайты</h2>
             <p class="index-catalog-text">Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
-            <a class="index-catalog-link" href="#">Заказать</a>
+            <a class="index-catalog-link link-red" href="#">Заказать</a>
           </div>
           <div class="index-catalog-item">
             <img class="index-catalog-image" src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
             <h2 class="index-catalog-title">Приложения</h2>
             <p class="index-catalog-text">Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="index-catalog-link" href="#">Заказать</a>
+            <a class="index-catalog-link link-green" href="#">Заказать</a>
           </div>
           <div class="index-catalog-item">
             <img class="index-catalog-image" src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
             <h2 class="index-catalog-title">Презентации</h2>
             <p class="index-catalog-text">Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="index-catalog-link" href="#">Заказать</a>
+            <a class="index-catalog-link link-yellow" href="#">Заказать</a>
           </div>
         </section>
         <section class="index-content">
@@ -134,9 +134,9 @@
     <footer class="main-footer">
       <div class="container container-flex">
         <div class="footer-social-btn">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграмм</a>
+          <a class="social-btn social-btn-vk" href="#" title="Вконтакте"></a>
+          <a class="social-btn social-btn-fb" href="#" title="Фейсбук"></a>
+          <a class="social-btn social-btn-inst" href="#" title="Инстаграмм"></a>
         </div>
         <div class="footer-social-text">
           <b>Давайте дружить, это выгодно!</b>
@@ -147,17 +147,17 @@
   </body>
   <div class="letter">
     <form>
-      <div class="letter-contact">
+      <div class="letter-contact letter-header">
         <h2 class="letter-title">Напишите нам</h2>
         <button class="letter-close" type="button"></button>
       </div>
-      <div class="letter-contact">
+      <div class="letter-contact letter-body">
         <div class="contact-item">
-          <label class="your-contact-title" for="name">Ваше имя:</label>
+          <label class="your-contact-title" for="name">Ваше имя:</label><br>
           <input class="your-contact-text" type="text" name="your-name" placeholder="Представьтесь, пожалуйста" id="name">
         </div>
         <div class="contact-item">
-          <label class="your-contact-title" for="email">Ваш e-mail:</label>
+          <label class="your-contact-title" for="email">Ваш e-mail:</label><br>
           <input class="your-contact-text" type="email" name="your-mail" placeholder="Для отправки ответа" id="email">
         </div>
         <div class="contact-item">

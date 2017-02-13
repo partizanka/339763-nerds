@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>  
   <body>
@@ -26,7 +28,7 @@
               <a class="menu-link" href="#">Контакты</a>
             </li>
           </ul>   
-          <div class="menu-item">
+          <div class="menu-item basket">
             <a class="menu-link" href="#">Корзина</a>
           </div>
         </nav>
@@ -39,13 +41,14 @@
           <form class="filter" action="#">
             <div class="filter-cost">
               <h2 class="filter-title">Стоимость:</h2>
-              <div class="filter-control filter-color">
-                <div class="toggle"></div>
-                <div class="toggle"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+              <div class="range-filter range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
               </div>
-              <div class="filter-control">
+              <div class="range-filter">
                 <div class="filter-input">
                   <label class="input-title" for="from">от</label>
                   <input class="input-mark" type="text" name="cost-from" value="0" id="from">
@@ -100,14 +103,16 @@
         <div class="catalog-block-right">
           <section class="catalog-sort">
             <h2 class="filter-title">Сортировать:</h2>
-            <div>
-              <a class="sort-link" href="#">По цене</a> 
-              <a class="sort-link" href="#">По типу</a>
-              <a class="sort-link" href="#">По названию</a>
-            </div>
-            <div class="btn-sort">
-              <a class="sort-link btn-sort-item" href="#"></a>
-              <a class="sort-link btn-sort-item" href="#"></a>
+            <div class="sort-control">
+              <div class="filter-sort">
+                <a class="sort-link" href="#">По цене</a> 
+                <a class="sort-link" href="#">По типу</a>
+                <a class="sort-link" href="#">По названию</a>
+              </div>
+              <div class="btn-sort">
+                <a class="sort-link down" href="#"></a>
+                <a class="sort-link up" href="#"></a>
+              </div>
             </div>
           </section>
           <section class="catalog-list">
@@ -200,7 +205,7 @@
             <li class="page-item">
               <a class="page-link" href="#">3</a>
             </li>
-            <li class="page-item">
+            <li class="page-item next">
               <a class="page-link" href="#">Следующая</a>
             </li>
           </ul>
@@ -218,9 +223,9 @@
     <footer class="main-footer">
       <div class="container container-flex">
         <div class="footer-social-btn">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграмм</a>
+          <a class="social-btn social-btn-vk" href="#" title="Вконтакте"></a>
+          <a class="social-btn social-btn-fb" href="#" title="Фейсбук"></a>
+          <a class="social-btn social-btn-inst" href="#" title="Инстаграмм"></a>
         </div>
         <div class="footer-social-text">
           <b>Давайте дружить, это выгодно!</b>
@@ -231,17 +236,17 @@
   </body>
   <div class="letter">
     <form>
-      <div class="letter-contact">
+      <div class="letter-contact letter-header">
         <h2 class="letter-title">Напишите нам</h2>
         <button class="letter-close" type="button"></button>
       </div>
-      <div class="letter-contact">
+      <div class="letter-contact letter-body">
         <div class="contact-item">
-          <label class="your-contact-title" for="name">Ваше имя:</label>
+          <label class="your-contact-title" for="name">Ваше имя:</label><br>
           <input class="your-contact-text" type="text" name="your-name" placeholder="Представьтесь, пожалуйста" id="name">
         </div>
         <div class="contact-item">
-          <label class="your-contact-title" for="email">Ваш e-mail:</label>
+          <label class="your-contact-title" for="email">Ваш e-mail:</label><br>
           <input class="your-contact-text" type="email" name="your-mail" placeholder="Для отправки ответа" id="email">
         </div>
         <div class="contact-item">
