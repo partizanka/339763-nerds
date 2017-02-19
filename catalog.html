@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>  
   <body>
     <header class="main-header">
@@ -62,11 +62,11 @@
             <div class="filter-menu">
               <h2 class="filter-title">Сетка:</h2>
               <div class="filter-menu-item">
-                <input class="menu-mark" type="radio" name="network" id="adaptive" checked>
+                <input class="menu-mark" type="radio" name="network" id="adaptive" checked disabled>
                 <label class="filter-menu-title grid" for="adaptive">Адаптивная</label>
               </div>
               <div class="filter-menu-item">
-                <input class="menu-mark" type="radio" name="network" id="fixed">
+                <input class="menu-mark" type="radio" name="network" id="fixed" disabled>
                 <label class="filter-menu-title grid" for="fixed">Фиксированная</label>
               </div>
               <div class="filter-menu-item">
@@ -77,7 +77,7 @@
             <div class="filter-menu">
               <h2 class="filter-title">Особенности:</h2>
               <div class="filter-menu-item">
-                <input class="menu-mark" type="checkbox" name="features-slider" id="slider" checked>
+                <input class="menu-mark" type="checkbox" name="features-slider" id="slider" checked disabled>
                 <label class="filter-menu-title feature" for="slider">Слайдер</label>
               </div>
               <div class="filter-menu-item">
@@ -89,7 +89,7 @@
                 <label class="filter-menu-title feature" for="news">Новости</label>
               </div>
               <div class="filter-menu-item">
-                <input class="menu-mark" type="checkbox" name="features-galery" id="galery">
+                <input class="menu-mark" type="checkbox" name="features-galery" id="galery" disabled>
                 <label class="filter-menu-title feature" for="galery">Галерея</label>
               </div>
               <div class="filter-menu-item">
@@ -257,7 +257,7 @@
       </form>
     </div>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script src="js/map.js" type="text/javascript"></script>
-    <script src="js/popup.js" type="text/javascript"></script>
+    <script src="js/map.min.js" type="text/javascript"></script>
+    <script src="js/popup.min.js" type="text/javascript"></script>
   </body>
 </html>
