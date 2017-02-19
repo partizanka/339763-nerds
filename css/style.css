@@ -150,11 +150,10 @@ img {
   cursor: pointer;
 }
 
-#slider-first:checked ~ .slider-btn label[for="slider-first"],
-#slider-second:checked ~ .slider-btn label[for="slider-second"],
-#slider-third:checked ~ .slider-btn label[for="slider-third"] { 
+.btn-1:checked ~ .slider-btn label[for="slider-first"],
+.btn-2:checked ~ .slider-btn label[for="slider-second"],
+.btn-3:checked ~ .slider-btn label[for="slider-third"] { 
   background: #c1c1c1;
-  
 }
 
 .slide {
@@ -224,13 +223,13 @@ img {
   display: none;
 }
 
-#slider-first:checked ~ .slides .slide:nth-child(1) { 
+.btn-1:checked ~ .slides .slide:nth-child(1) { 
   display: block;
 }
-#slider-second:checked ~ .slides .slide:nth-child(2) { 
+.btn-2:checked ~ .slides .slide:nth-child(2) { 
   display: block;
 }
-#slider-third:checked ~ .slides .slide:nth-child(3) { 
+.btn-3:checked ~ .slides .slide:nth-child(3) { 
   display: block;
 }
 
@@ -600,6 +599,7 @@ img {
 }
 
 .social-btn {
+  display: block;
   width: 80px;
   height: 80px;
   margin-right: 10px;
@@ -996,6 +996,7 @@ img {
 }
 
 .catalog-item-btn {
+  display: block;
   width: 14px;
   height: 14px;
   margin-right: 9px;
@@ -1213,11 +1214,8 @@ img {
   opacity: 0.1;
 }
 
-.contact-item {
-  
-}
-
 .your-contact-title {
+  display: block;
   margin-bottom: 10px;
   line-height: 18px;
   font-weight: 700;
