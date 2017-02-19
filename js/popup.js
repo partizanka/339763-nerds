@@ -4,10 +4,10 @@ var close = document.querySelector(".letter-close");
 
 link.addEventListener("click", function(event) {
   event.preventDefault();
-  popup.classList.add(".letter-show");
+  popup.classList.add("letter-show");
 });
 
 close.addEventListener("click", function(event) {
   event.preventDefault();
-  popup.classList.remove(".letter-show");
+  popup.classList.remove("letter-show");
 });

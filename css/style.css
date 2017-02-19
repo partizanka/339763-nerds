@@ -1,4 +1,5 @@
 body {
+  position: relative;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -489,7 +490,7 @@ img {
   background-image: url(../img/logo-41.png);
 }
 
-#map {
+.map {
   position: relative;
   height: 415px;
   background-image: url(../img/map-marker.png);
@@ -1056,28 +1057,25 @@ img {
   width: 200px;
 }
 
-.letter-show {
-  display: block;
-}
-
 .letter {
-  position: fixed;
-  top: 5%;
+  position: absolute;
   left: 15%;
+  bottom: 50px;
   z-index: 1000;
   display: none;
   box-sizing: border-box;
   width: 960px;
   height: 590px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  padding-top: 75px;
-  padding-bottom: 85px;
+  padding-top: 65px;
+  padding-bottom: 80px;
   padding-left: 100px;
   padding-right: 80px;
   background-color: #ffffff;
   box-shadow: 0 20px 40px 0 #000000;
+}
+
+.letter-show {
+  display: block;
 }
 
 .letter-header {
@@ -1094,7 +1092,7 @@ img {
 
 .letter-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-size: 45px;
   line-height: 45px;
   color: #000000;
@@ -1122,7 +1120,7 @@ img {
 }
 
 .contact-item {
-  margin-bottom: 35px;
+  
 }
 
 .your-contact-title {
@@ -1134,6 +1132,7 @@ img {
 .contact-item input {
   width: 326px;
   height: 15px;
+  margin-bottom: 25px;
   padding: 15px;
   border: 2px solid #d7dcde;
   border-radius: 3px;
@@ -1141,8 +1140,8 @@ img {
 
 .contact-item textarea {
   width: 726px;
-  min-height: 116px;
   padding: 15px;
+  margin-bottom: 35px;
   border: 2px solid #d7dcde;
   border-radius: 3px;
 }
@@ -1196,7 +1195,7 @@ img {
 
 .letter-btn {
   width: 260px;
-  margin-top: 0;
+  margin: 0;
   padding-top: 16px;
   padding-bottom: 16px;
   line-height: 18px;

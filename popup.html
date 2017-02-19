@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>  
+  <body>
+   <div class="letter">
+      <form action="#" method="post">
+        <div class="letter-contact letter-header">
+          <h2 class="letter-title">Напишите нам</h2>
+          <button class="letter-close" type="button"></button>
+        </div>
+        <div class="letter-contact letter-body">
+          <div class="contact-item">
+            <label class="your-contact-title" for="name">Ваше имя:</label><br>
+            <input class="your-contact-text" type="text" name="your-name" placeholder="Представьтесь, пожалуйста" id="name">
+          </div>
+          <div class="contact-item">
+            <label class="your-contact-title" for="email">Ваш e-mail:</label><br>
+            <input class="your-contact-text" type="email" name="your-mail" placeholder="Для отправки ответа" id="email">
+          </div>
+          <div class="contact-item">
+            <label class="your-contact-title" for="message">Текст письма:</label>
+            <textarea class="your-contact-text" name="your-message" placeholder="В свободной форме" id="message" rows="5"></textarea>
+          </div>
+        </div>
+        <input class="letter-btn" type="submit" name="your-letter" value="Отправить">
+      </form>
+    </div>
+  </body>
+</html>
