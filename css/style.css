@@ -450,6 +450,7 @@ img {
 
 .link-company {
   position: relative;
+  display: block;
   width: 290px;
   height: 180px;
   background-repeat: no-repeat;
