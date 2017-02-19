@@ -126,7 +126,7 @@
           <a class="link-company mishka line" href="#"></a>
         </section>
       </div>
-      <div class="map">
+      <div class="map" id="map">
         <section class="contacts">
           <h2 class="contacts-title">Nёrds design studio</h2>
           <p class="contacts-text">191196, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -148,9 +148,12 @@
         </div>
       </div>
     </footer>
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/map.js" type="text/javascript"></script>
+    <script src="js/popup.js" type="text/javascript"></script>
   </body>
   <div class="letter">
-    <form>
+    <form action="#" method="post">
       <div class="letter-contact letter-header">
         <h2 class="letter-title">Напишите нам</h2>
         <button class="letter-close" type="button"></button>
@@ -166,7 +169,7 @@
         </div>
         <div class="contact-item">
           <label class="your-contact-title" for="message">Текст письма:</label>
-          <textarea class="your-contact-text" name="your-message" placeholder="В свободной форме" id="massege"></textarea>
+          <textarea class="your-contact-text" name="your-message" placeholder="В свободной форме" id="message"></textarea>
         </div>
       </div>
       <input class="letter-btn" type="submit" name="your-letter" value="Отправить">
