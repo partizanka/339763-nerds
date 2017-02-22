@@ -479,6 +479,7 @@ body {
 
 .logo-company .htmlacademy {
   background-image: url(../img/logo-1.png);
+  background-position: center 60px;
 }
 
 .logo-company .htmlacademy:hover {
@@ -515,6 +516,7 @@ body {
 
 .logo-company .mishka {
   background-image: url(../img/logo-4.png);  
+  background-position: center 50px;
 }
 
 .logo-company .mishka:hover {
@@ -545,7 +547,7 @@ body {
   margin-top: -154px; 
   margin-right: 260px;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 48px;
   padding-left: 50px;
   padding-right: 50px;
   background: #ffffff;
@@ -668,7 +670,7 @@ body {
 .catalog-title {
   margin-top: 70px;
   margin-bottom: 0;
-  padding-bottom: 108px;
+  padding-bottom: 110px;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 55px;
@@ -724,7 +726,7 @@ body {
   padding-top: 39px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   background: #eeeeee;
   border-radius: 3px;
 }
@@ -1042,6 +1044,7 @@ body {
 .catalog-image {
   display: block;
   box-sizing: border-box;
+  background-color: #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
   border-left: 1px solid #e5e5e5;
   border-right: 1px solid #e5e5e5;
@@ -1082,6 +1085,10 @@ body {
   text-align: center;
   color: #666666;
   overflow-y: auto;
+}
+
+.sedona .catalog-text {
+  width: 200px;
 }
 
 .catalog-link {
